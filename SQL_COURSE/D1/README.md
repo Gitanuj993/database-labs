@@ -11,4 +11,4 @@ Exam Link : https://skillcourse.in/live-quiz/day-1-sql-introduction-and-installa
 
 Notes : https://drive.google.com/uc?export=download&id=1NAwdoaK2Q4wM9QWYRb6iGQC2tiFgUGdA
 
-
+My_Score : 45/50
