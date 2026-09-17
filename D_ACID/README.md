@@ -117,6 +117,12 @@ rollback ;
 
 ## 3. Save Point
 
+- A savepoint in SQL is a named marker within an open transaction that allows for partial rollbacks. 
+
+- It enables developers to undo specific changes made after the savepoint was created while preserving earlier changes in the same transaction.
+
+
+
 > You can imagine it like ``git commits`` or git snapshots .
 
 ### Dirty values and process
