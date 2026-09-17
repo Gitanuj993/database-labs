@@ -40,3 +40,65 @@ Records: 3  Duplicates: 0  Warnings: 0`` then the records are added.
 SELECT *
 FROM students;
 ```
+
+- ``SELECT * `` retrieves all columns and rows from the table.
+
+## Types of Tables in SQL
+
+### 1. Base Table
+- A base table is a regular table whose data is stored by the database.
+
+Example:
+```sql 
+CREATE TABLE employees (
+    id INT,
+    name VARCHAR(100),
+    salary DECIMAL(10,2)
+);
+```
+
+- This is a normal, persistent table.
+
+
+### 2. Temporary Table
+
+- A temporary table stores data temporarily during a database session or transaction, depending on the database system.
+
+In MySQL:
+```sql
+CREATE TEMPORARY TABLE temp_students (
+    id INT,
+    name VARCHAR(100)
+);
+```
+- This table is generally automatically removed when the session ends.
+
+Useful for:
+
+- Intermediate calculations
+- Data transformation
+- Complex queries
+- Temporary processing
+
+### 3. View
+
+- A view is a virtual table based on a SQL query.
+
+Unlike a regular table, a typical view does not independently store the result data.
+
+Example:
+
+CREATE VIEW cse_students AS
+SELECT *
+FROM students
+WHERE branch = 'CSE';
+
+Now:
+
+SELECT *
+FROM cse_students;
+
+The view presents the students belonging to the CSE branch.
+
+A view is not the same as a physical table. Some database systems also support materialized views, which store query results separately.
+

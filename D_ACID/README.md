@@ -94,3 +94,30 @@ set autocommit = 1 ;
 ```sql
 \set AUTOCOMMIT ON
 ```
+
+
+##  1. COMMIT ; 
+- commit changes after work
+
+```sql 
+commit ;
+```
+
+> you can imagine it like ``git push``
+
+## 2. ROLLBACK ;
+- want to undo changegs and if not commited yet then we can rollback to previous point
+
+```sql 
+rollback ;
+```
+
+>[!note]
+> You can imagine it like ``git revert`` or .
+
+## 3. Save Point
+
+> You can imagine it like ``git commits`` or git snapshots .
+
+### Dirty values and process
+
