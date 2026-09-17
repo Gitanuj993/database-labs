@@ -150,3 +150,20 @@ SELECT * FROM department_average;
 
 
 
+## Types of Views
+
+Depending or based on Updation
+1. Static View
+2. Dynamic View
+
+## Static View 
+
+Static view is also called a read only view.
+- we can't update or change anything.
+- 
+
+## Dynamic View
+If the a view is updatable then we can update the view,
+if the view is updated or changed the underlying table is also updated or changed.
+
+
