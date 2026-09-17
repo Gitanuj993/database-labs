@@ -160,10 +160,27 @@ Depending or based on Updation
 
 Static view is also called a read only view.
 - we can't update or change anything.
-- 
+
+
+WE can't update view becouse when
+When a select statement is contained 
+- group by clause 
+- order by , // having clause ? ,
+- if it doesn't contain primary key.
 
 ## Dynamic View
 If the a view is updatable then we can update the view,
 if the view is updated or changed the underlying table is also updated or changed.
 
+we can update the records of orginal table using view.
 
+When SELECT statement contains
+- It contains primary key
+- It doesn't contain GROUP BY Clause
+- It doesn't contains ORDER BY cluase
+
+
+
+## Who Supports what 
+ + mysql do not support static view
+ + Postgre also support static view

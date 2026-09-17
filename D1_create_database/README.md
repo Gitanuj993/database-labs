@@ -30,3 +30,13 @@ Example
 ```sql
 use mydb1 ;
 ```
+
+
+> [!note]
+> Clear the terminal Screen 
+
+Use 
+```sql
+system cls ;
+```
+
