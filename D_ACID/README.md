@@ -33,11 +33,12 @@ We can't perform SELECT in a Transaction or Queries other than DML
 
 ##  Atomicity (All or Nothing)
 
-- If the one Operation failed, The whole Transaction fail.
+- If the one Operation failed, The whole Transaction fail. or ROLLBACK happen else the changes will be COMMIT
 
 - Atomicity ensures that a transaction is treated as a single unit of work.
 
 - Either all operations in a transaction are completed successfully, or none of them are applied.
+
 
 
 ### Real-world example: Bank transfer
@@ -48,3 +49,15 @@ Suppose Anuj wants to transfer ₹1,000 to Rahul then the transaction involves t
 2. Add ₹1,000 to Rahul's account.
 
 
+## COMMIT : What is commit
+
+When the all database operations are performed then Transaction will be Successful and changes will be commited using COMMIT command.
+
+### What is @@autocommit ?
+
+- In Postgre and MySQL by default do automatic commit. then the every transaction can't be rollback.
+
+- autocommit can be enables/disabled.
+
+- In MYSQL autocommit is by defualt enabled and showed using -> 1
+- In Postgre autocommit is by default and it is represented as  -> ON
