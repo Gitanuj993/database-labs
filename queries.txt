@@ -1,0 +1,30 @@
+CREATE TABLE mysql1(
+cid INT PRIMARY KEY AUTO_INCREMENT,
+cname char(10),
+phone INT
+
+);
+
+
+INSERT INTO mysql1(cname,phone) VALUES('Kishika',999);
+INSERT INTO mysql1(cname,phone) VALUES('Ram',888);
+INSERT INTO mysql1(cname,phone) VALUES('Abhishek',777);
+INSERT INTO mysql1(cname,phone) VALUES('Keshav',666);
+INSERT INTO mysql1(cname,phone) VALUES('Mayank',555);
+INSERT INTO mysql1(cname,phone) VALUES('Akshay',444);
+
+
+CREATE TABLE mysql2(
+cid INT PRIMARY KEY AUTO_INCREMENT,
+cname char(10),
+phone INT
+
+) AUTO_INCREMENT=101;
+
+
+INSERT INTO mysql2(cname,phone) VALUES('Kishika',999);
+INSERT INTO mysql2(cname,phone) VALUES('Ram',888);
+INSERT INTO mysql2(cname,phone) VALUES('Abhishek',777);
+INSERT INTO mysql2(cname,phone) VALUES('Keshav',666);
+INSERT INTO mysql2(cname,phone) VALUES('Mayank',555);
+INSERT INTO mysql2(cname,phone) VALUES('Akshay',444);
