@@ -30,3 +30,13 @@ VALUES
 (3, 'Priya', 20, 'CSE'),
 (4, 'Aman', 21, 'ME');
 ```
+- If it shows ``Query OK, 3 rows affected (0.00 sec)
+Records: 3  Duplicates: 0  Warnings: 0`` then the records are added.
+
+### How can we see the inserted Data
+
+- using ``SELECT`` statement
+```sql
+SELECT *
+FROM students;
+```
