@@ -61,3 +61,36 @@ When the all database operations are performed then Transaction will be Successf
 
 - In MYSQL autocommit is by defualt enabled and showed using -> 1
 - In Postgre autocommit is by default and it is represented as  -> ON
+
+### How to know about auto-commit is enabled/disabled in MYSQL
+
+```sql
+SELECT @@AutoCommit ;
+```
+### How To Disable it
+
+```sql
+set autocommit = 0 ;
+```
+### How To Enable it
+
+```sql
+set autocommit = 1 ;
+```
+
+
+### How to know about auto-commit is enabled/disabled in Postgre
+
+```sql
+\echo : AUTOCOMMIT
+```
+### How To Disable it
+
+```sql
+\set AUTOCOMMIT OFF
+```
+### How To Enable it
+
+```sql
+\set AUTOCOMMIT ON
+```
