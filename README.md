@@ -29,5 +29,13 @@ select count(*) from st
 ## HAVING 
 
 
+## Types of SQL Query Langueges
+
+1. DDL : Data Defination Language
+2. DML : Data Defination Language
+3. DQL : Data Query Language
+4. TCL : Transaction Control Language
+5. DCL : Data Control Language
+
  
 
