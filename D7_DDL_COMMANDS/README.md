@@ -126,4 +126,5 @@ DROP TABLE mycustomers ;
 - ``ALTER TABLE`` statement is used to add , delete , modify coloumns in
 existing tables.
 
-
+- DROP Can't be ``ROLLBACK`` ;
+- DROP will delete the whole table.
