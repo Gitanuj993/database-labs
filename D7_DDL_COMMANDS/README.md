@@ -92,5 +92,38 @@ ALTER TABLE customers ADD CONSTRAINT uni_name UNIQUE(cid) ;
 
 - NOT NULL
 
-    
+### DESCRIBE TABLE
+```sql
+desc customers ;
+```
+
+### DROP CONSTRAINT
+
+ALTER TABLE customers
+MODIFY COLUMN name VARCHAR(50) NOT NULL;
+
+### RENAME TABLE 
+
+change name of ``customers`` table to ``mycustomers``
+
+```sql
+AlTER TABLE customers RENAME TO mycustomers ;
+```
+
+### Dropping DATBASE objects
+Syntax
+```sql
+DROP TABLE <TABLE_NAME> ;
+DROP VIEW <VIEW_NAME> ;
+DROP INDEX <INDEX_NAME> ;
+```
+Example
+
+```sql
+DROP TABLE mycustomers ;
+```
+
+- ``ALTER TABLE`` statement is used to add , delete , modify coloumns in
+existing tables.
+
 
