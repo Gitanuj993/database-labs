@@ -21,4 +21,4 @@ select * from students where age = 20 ;
 select * from students where city = 'khandwa' ;
 
 -- Display students studying a particular course.
-select name from students where course = "MCA" ;
+select name from students where course = 'M' ;
