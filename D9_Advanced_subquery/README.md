@@ -12,4 +12,17 @@
 - It is executed once per outer query.
 - It is dependent on outer query.
 
+### Syntax
+
+```txt
+SELECT cname,(select avg(fee) from accounts) as avg_fee from students ;
+```
+
+## Corelated Subquery
+- 
+### Syntax
+
+```txt
+
+```
 
