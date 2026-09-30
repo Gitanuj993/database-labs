@@ -197,16 +197,52 @@ MAX()
 
 ### Looking at previous/next rows
 ```sql
-LAG()
-LEAD()
+LAG(<col_name>,<offset>,<default>)
+LEAD(<col_name>,<offset>,<default>)
+> Offset , Defult
 ```
 
 ### Others
 
 ```sql
-firstvalue()
+FIRSTVALUE()
 LASTVALUE()
+ROUND()
+CUME_DIST()
+PERCENT_RANK()
+PERCENT_CONT()
+
+
+
 ```
+
+## CASE
+The SQL CASE expression is a conditional logic tool that functions like an IF-THEN-ELSE statement, allowing queries to return different values based on specified conditions.
+
+Syntax :
+```sql
+CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    ELSE result3
+END
+```
+
+Example :
+
+``sql
+SELECT
+    name,
+    salary,
+    CASE
+        WHEN salary >= 80000 THEN 'High'
+        WHEN salary >= 50000 THEN 'Medium'
+        ELSE 'Low'
+    END AS salary_level
+FROM employees;
+```
+
+
 
 
 > A window function performs calculations across related rows while keeping every original row in the result.
