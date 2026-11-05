@@ -2,9 +2,10 @@
 
 # Download the ``DATASET`` 
 IN formate ``.xlsx`` or ``.csv``
+e.g You can convert it via online websites.
 
 > [!note]
-> Convert the ``.xlsx`` to ``.csv`` formate , read this :
+> Convert the ``.xlsx`` to ``.csv`` formate , read this to setup storage : https://github.com/Gitanuj993/termux-labs
 
 ## CREATE THE DATABASE & TABLE 
 i. FIRST CREATE database IN ``MariaDB``
